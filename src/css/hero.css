@@ -1,6 +1,7 @@
 .hero {
   padding-top: 32px;
   padding-bottom: 32px;
+  color: #0c0708;
 }
 
 .hero-container {
@@ -15,46 +16,60 @@
   margin-bottom: 16px;
   font-family: 'Caveat', cursive;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 40px;
   line-height: 1.1;
+  color: #0c0708;
 }
 
 .hero-text {
   margin-bottom: 24px;
   font-size: 16px;
   line-height: 1.5;
-}
-
-.hero-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border-radius: 24px;
-  background-color: #e8893a;
-  color: #ffffff;
+  color: #0c0708;
 }
 
 .hero-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 16px;
+  margin-top: 24px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #ffb780;
+  border-radius: 24px;
+  background-color: #ffb780;
+  color: #ffffff;
 }
 
 .hero-btn-light {
   background-color: transparent;
-  border: 1px solid #e8893a;
-  color: #e8893a;
+  color: #ffb780;
 }
 
-@media screen and (min-width: 1280px) {
-  .hero-buttons {
-    justify-content: flex-start;
-  }
-}
 
 .hero-image {
   width: 100%;
   max-width: 344px;
   height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-image {
+    max-width: 420px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -70,26 +85,15 @@
     max-width: 520px;
   }
 
-  .hero-title {
-    font-size: 64px;
+ .hero-title {
+  font-size: 56px;
+}
+
+  .hero-buttons {
+    justify-content: flex-start;
   }
 
   .hero-image {
     max-width: 520px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
-
-  .hero-title {
-    font-size: 48px;
-  }
-
-  .hero-image {
-    max-width: 420px;
   }
 }

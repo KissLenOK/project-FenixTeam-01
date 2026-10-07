@@ -60,3 +60,18 @@
     max-width: 520px;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .hero-title {
+    font-size: 48px;
+  }
+
+  .hero-image {
+    max-width: 420px;
+  }
+}

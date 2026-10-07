@@ -1,0 +1,117 @@
+.events {
+    --events-border: #d9d5d1;
+
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 64px;
+    font-family: "Tajawal", sans-serif;
+    color: #000;
+}
+
+.events__title {
+    margin: 0 0 8px;
+    font-family: "Caveat", cursive;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.events__text {
+    margin: 0 0 32px;
+    font-size: 16px;
+}
+
+.events__list {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.event {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 5px 0;
+}
+
+.event + .event {
+    border-top: 1px solid var(--events-border);
+}
+
+.event__img {
+    display: block;
+    flex-shrink: 0;
+    width: 144px;
+    height: 144px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.event__name {
+    flex: 1 1 auto;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.event__place {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    gap: 6px;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.event__place:hover,
+.event__place:focus-visible {
+    text-decoration: underline;
+}
+
+.event__icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.event__date {
+    flex-shrink: 0;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.event__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-shrink: 0;
+    padding: 9px 23px;
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    text-decoration: none;
+    background-color: transparent;
+    border: 1px solid var(--events-border);
+    border-radius: 100px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.event__btn:hover,
+.event__btn:focus-visible {
+    opacity: 0.6;
+}
+
+.event__btn[aria-disabled="true"] {
+    opacity: 0.3;
+    pointer-events: none;
+}
+

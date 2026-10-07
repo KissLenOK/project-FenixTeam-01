@@ -33,6 +33,24 @@
   color: #ffffff;
 }
 
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.hero-btn-light {
+  background-color: transparent;
+  border: 1px solid #e8893a;
+  color: #e8893a;
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-buttons {
+    justify-content: flex-start;
+  }
+}
+
 .hero-image {
   width: 100%;
   max-width: 344px;

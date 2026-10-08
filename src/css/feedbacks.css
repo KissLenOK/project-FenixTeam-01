@@ -1,14 +1,5 @@
-.feedbacks {
-  padding: 64px 20px;
-  background-color: #faf6f3;
-}
-
-.feedbacks-container {
-  max-width: 335px;
-  margin: 0 auto;
-}
-
 .feedbacks-title {
+  font-weight: 700;
   font-size: 48px;
   line-height: 1.1;
   text-align: center;
@@ -57,14 +48,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .feedbacks {
-    padding: 64px 32px;
-  }
-
-  .feedbacks-container {
-    max-width: 704px;
-  }
-
   .feedbacks-title {
     max-width: 560px;
     margin-inline: auto;
@@ -81,14 +64,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-  .feedbacks {
-    padding: 64px;
-  }
-
-  .feedbacks-container {
-    max-width: 1312px;
-  }
-
   .feedbacks-title {
     margin-bottom: 80px;
   }

@@ -1,0 +1,68 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 10px 24px;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #0c0708;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background-color 250ms ease-out,
+    border-color 250ms ease-out;
+}
+
+.button-filled {
+  background-color: #ffb780;
+  border-color: #ffb780;
+}
+
+.button-transparent {
+  background-color: transparent;
+  border-color: rgba(12, 7, 8, 0.15);
+}
+
+.button-filled:hover,
+.button-filled:focus-visible,
+.button-transparent:hover,
+.button-transparent:focus-visible {
+  opacity: 0.5;
+}
+
+.button-filled:active,
+.button-transparent:active {
+  opacity: 0.7;
+}
+
+.button-filled:disabled,
+.button-transparent:disabled {
+  opacity: 0.2;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+/* Register у header і Events */
+.button-small {
+  height: 40px;
+  padding: 8px 20px;
+}
+
+/* Burger і Close */
+.icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  border: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}

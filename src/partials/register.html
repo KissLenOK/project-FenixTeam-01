@@ -1,48 +1,52 @@
 <section class="register section" id="register">
-  <div class="container">
-    <h2 class="register-title title">Register</h2>
-    <form class="register-form" name="review_form">
-      <div class="register-form-field">
-        <label class="register-form-label" for="person_name">Name*</label>
-        <input
-          class="register-form-input"
-          type="text"
-          id="person_name"
-          name="person_name"
-          placeholder="Emma"
-          required
-          pattern="^[a-zA-Z\s\.]{5,64}$"
-          title="Error text"
-        />
-        <p class="error">Error text</p>
-      </div>
-      <div class="register-form-field">
-        <label class="register-form-label" for="person_email">Email*</label>
-        <input
-          class="register-form-input"
-          type="email"
-          id="person_email"
-          name="person_email"
-          placeholder="hello@wildsketch.com"
-          required
-          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-        />
-        <p class="error">Error text</p>
-      </div>
-      <div class="register-form-field">
-        <label class="register-form-label" for="person_name"
-          >Describe your skills</label
-        >
-        <textarea
-          class="register-form-comment"
-          id="person_comment"
-          name="person_comment"
-          placeholder="Type your skills..."
-          maxlength="500"
-        ></textarea>
-      </div>
-    </form>
-    <button class="button button-filled btn-reg" type="submit">Register</button>
+  <div class="container reg">
+    <div class="register-wrapper">
+      <h2 class="register-title title">Register</h2>
+      <form class="register-form" name="review_form">
+        <div class="register-form-field">
+          <label class="register-form-label" for="person_name">Name*</label>
+          <input
+            class="register-form-input"
+            type="text"
+            id="person_name"
+            name="person_name"
+            placeholder="Emma"
+            required
+            pattern="^[a-zA-Z\s\.]{5,64}$"
+          />
+          <p class="error">Error text</p>
+        </div>
+        <div class="register-form-field">
+          <label class="register-form-label" for="person_email">Email*</label>
+          <input
+            class="register-form-input"
+            type="email"
+            id="person_email"
+            name="person_email"
+            placeholder="hello@wildsketch.com"
+            required
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+          <p class="error">Error text</p>
+        </div>
+        <div class="register-form-field">
+          <label class="register-form-label" for="person_name"
+            >Describe your skills</label
+          >
+          <textarea
+            class="register-form-comment"
+            id="person_comment"
+            name="person_comment"
+            cols="6"
+            placeholder="Type your skills..."
+            maxlength="500"
+          ></textarea>
+        </div>
+        <button class="button button-filled btn-reg" type="submit">
+          Register
+        </button>
+      </form>
+    </div>
     <img
       class="img-contact"
       srcset="

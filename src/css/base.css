@@ -6,6 +6,10 @@ body {
   background-color: #faf6f3;
 }
 
+.section {
+  padding: 64px 0;
+}
+
 .title {
   font-family: 'Caveat', sans-serif;
   font-weight: 700;

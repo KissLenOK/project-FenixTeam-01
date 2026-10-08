@@ -44,7 +44,6 @@
     row-gap: 32px;
   }
   .gallery-list > li:nth-child(-n + 3) {
-    flex-basis: auto;
     width: calc((100% - 48px) / 3);
     height: 203px;
   }

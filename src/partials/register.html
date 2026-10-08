@@ -1,0 +1,54 @@
+<section class="register" id="register">
+  <div class="container">
+    <p class="register-title">Register</p>
+    <form class="register-form" name="review_form">
+      <div class="register-form-field">
+        <label class="register-form-label" for="person_name">Name*</label>
+        <input
+          class="register-form-input"
+          type="text"
+          id="person_name"
+          name="person_name"
+          placeholder="Emma"
+          required
+          pattern="^[a-zA-Z\s\.]{5,64}$"
+          title="Error text"
+        />
+      </div>
+      <div class="register-form-field">
+        <label class="register-form-label" for="person_email">Email*</label>
+        <input
+          class="register-form-input"
+          type="email"
+          id="person_email"
+          name="person_email"
+          placeholder="hello@wildsketch.com"
+          required
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          title="Error text"
+        />
+      </div>
+      <div class="register-form-field">
+        <label class="register-form-label" for="person_name"
+          >Describe your skills</label
+        >
+        <textarea
+          class="register-form-comment"
+          id="person_comment"
+          name="person_comment"
+          placeholder="Type your skills..."
+          maxlength="500"
+        ></textarea>
+      </div>
+    </form>
+    <button class="btn btn-reg" type="submit">Register</button>
+    <img
+      srcset="../images/contact@1x.jpg 1x, ../images/contact@2x.jpg 2x"
+      src="../images/contact@1x.jpg"
+      alt="Students painting nature quotes"
+      width="335"
+      height="286"
+      loading="lazy"
+    />
+  </div>
+</section>

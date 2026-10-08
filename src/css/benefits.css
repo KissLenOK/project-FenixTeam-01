@@ -1,0 +1,149 @@
+.benefits {
+  padding: 40px 0;
+}
+
+.benefits-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.benefits-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 32px;
+  order: 1;
+}
+
+.benefits-image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  order: 2;
+}
+
+.benefits-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.benefits-title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 1.2;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  gap: 32px;
+}
+
+.benefits-item {
+  display: grid;
+  grid-template-columns: 40px minmax(0, 1fr);
+  column-gap: 32px;
+  align-items: start;
+}
+
+.benefits-icon {
+  display: block;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  color: #0c0708;
+}
+
+.benefits-item > div {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  gap: 16px;
+}
+
+.benefits-item-title {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.benefits-item-text {
+  margin: 0;
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .benefits {
+    padding: 64px 0;
+  }
+
+  .benefits-container {
+    gap: 48px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1440px) {
+  .benefits {
+    padding: 112px 0;
+  }
+
+  .benefits-container {
+    display: grid;
+    grid-template-columns: 616px 616px;
+    column-gap: 80px;
+    align-items: center;
+  }
+
+  .benefits-image-wrap {
+    width: 616px;
+    order: 1;
+    grid-column: 1;
+  }
+
+  .benefits-image {
+    width: 616px;
+    height: 586px;
+    object-fit: contain;
+  }
+
+  .benefits-content {
+    width: 616px;
+    gap: 32px;
+    order: 2;
+    grid-column: 2;
+  }
+
+  .benefits-title {
+    width: 450px;
+    line-height: 48px;
+  }
+
+  .benefits-list {
+    width: 616px;
+    padding-block: 8px;
+    gap: 32px;
+  }
+
+  .benefits-item {
+    grid-template-columns: 40px 544px;
+    gap: 32px;
+  }
+
+  .benefits-item-title {
+    line-height: 26px;
+  }
+
+  .benefits-item-text {
+    line-height: 24px;
+  }
+}

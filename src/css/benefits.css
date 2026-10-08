@@ -1,5 +1,7 @@
+/* MOBILE */
+
 .benefits {
-  padding: 40px 0;
+  padding-block: 40px;
 }
 
 .benefits-container {
@@ -82,7 +84,7 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    padding: 64px 0;
+    padding-block: 64px;
   }
 
   .benefits-container {
@@ -94,7 +96,7 @@
 
 @media screen and (min-width: 1440px) {
   .benefits {
-    padding: 112px 0;
+    padding-block: 112px;
   }
 
   .benefits-container {

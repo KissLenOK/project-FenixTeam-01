@@ -1,7 +1,8 @@
 /* MOBILE */
 
 .benefits {
-  padding-block: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .benefits-container {
@@ -13,8 +14,8 @@
 .benefits-content {
   display: flex;
   flex-direction: column;
-  width: 100%;
   gap: 32px;
+  width: 100%;
   order: 1;
 }
 
@@ -30,7 +31,6 @@
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
 }
 
 .benefits-title {
@@ -42,17 +42,15 @@
 .benefits-list {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  gap: 32px;
   padding-top: 8px;
   padding-bottom: 8px;
-  gap: 32px;
 }
 
 .benefits-item {
-  display: grid;
-  grid-template-columns: 40px minmax(0, 1fr);
-  column-gap: 32px;
-  align-items: start;
+  display: flex;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 .benefits-icon {
@@ -60,12 +58,12 @@
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  color: #0c0708;
 }
 
 .benefits-item > div {
   display: flex;
   flex-direction: column;
+  flex: 1;
   min-width: 0;
   gap: 16px;
 }
@@ -84,7 +82,8 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    padding-block: 64px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .benefits-container {
@@ -96,20 +95,20 @@
 
 @media screen and (min-width: 1440px) {
   .benefits {
-    padding-block: 112px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .benefits-container {
-    display: grid;
-    grid-template-columns: 616px 616px;
-    column-gap: 80px;
+    flex-direction: row;
     align-items: center;
+    gap: 80px;
   }
 
   .benefits-image-wrap {
     width: 616px;
+    flex-shrink: 0;
     order: 1;
-    grid-column: 1;
   }
 
   .benefits-image {
@@ -120,9 +119,9 @@
 
   .benefits-content {
     width: 616px;
+    flex-shrink: 0;
     gap: 32px;
     order: 2;
-    grid-column: 2;
   }
 
   .benefits-title {
@@ -131,14 +130,9 @@
   }
 
   .benefits-list {
-    width: 616px;
-    padding-block: 8px;
     gap: 32px;
-  }
-
-  .benefits-item {
-    grid-template-columns: 40px 544px;
-    gap: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .benefits-item-title {

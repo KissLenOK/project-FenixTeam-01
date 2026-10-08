@@ -1,6 +1,6 @@
 <section class="register" id="register">
-  <div class="container reg">
-    <p class="register-title">Register</p>
+  <div class="container section">
+    <h2 class="register-title title">Register</h2>
     <form class="register-form" name="review_form">
       <div class="register-form-field">
         <label class="register-form-label" for="person_name">Name*</label>
@@ -14,6 +14,7 @@
           pattern="^[a-zA-Z\s\.]{5,64}$"
           title="Error text"
         />
+        <p class="error">Error text</p>
       </div>
       <div class="register-form-field">
         <label class="register-form-label" for="person_email">Email*</label>
@@ -25,8 +26,8 @@
           placeholder="hello@wildsketch.com"
           required
           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
-          title="Error text"
         />
+        <p class="error">Error text</p>
       </div>
       <div class="register-form-field">
         <label class="register-form-label" for="person_name"
@@ -43,6 +44,7 @@
     </form>
     <button class="btn btn-reg" type="submit">Register</button>
     <img
+      class="img-contact"
       srcset="
         /images/register/contact@1x.jpg 1x,
         /images/register/contact@2x.jpg 2x

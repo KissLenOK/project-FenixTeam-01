@@ -119,6 +119,10 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .register.section {
+    padding: 112px 64px;
+  }
+
   .container.reg {
     display: flex;
     gap: 32px;

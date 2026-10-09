@@ -1,4 +1,3 @@
-
 .hero-container {
   display: flex;
   flex-direction: column;
@@ -6,24 +5,26 @@
 }
 
 .hero-title {
-  margin-bottom: 16px;
-  font-family: 'Caveat', cursive;
-  font-weight: 700;
+  margin-bottom: 24px;
   font-size: 40px;
   line-height: 1;
-  letter-spacing: -0.01em;
   text-align: left;
 }
 
 .hero-text {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
+  font-size: 18px;
   text-align: left;
 }
 
 .hero-buttons {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
   gap: 16px;
+}
+
+.hero-buttons .button {
+  width: 100%;
 }
 
 .hero-image {
@@ -32,22 +33,21 @@
 }
 
 @media screen and (min-width: 768px) {
-
   .hero-title {
     font-size: 56px;
   }
 
-  .hero-image {
-    max-width: 520px;
+  .hero-buttons {
+    flex-direction: row;
+    gap: 24px;
+  }
+
+  .hero-buttons .button {
+    width: 159px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-
-  .hero-title {
-  font-size: 56px;
-}
-
   .hero-container {
     flex-direction: row;
     justify-content: space-between;
@@ -58,16 +58,7 @@
     max-width: 520px;
   }
 
-  .hero-title,
-  .hero-text {
-    text-align: left;
-  }
-
-  .hero-buttons {
-    justify-content: flex-start;
-  }
-
-  .hero-image {
-    max-width: 520px;
+  .hero-title {
+    font-size: 56px;
   }
 }

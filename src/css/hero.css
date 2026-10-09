@@ -12,7 +12,10 @@
 
 .hero-title {
   margin-bottom: 16px;
+<<<<<<< HEAD
   font-family: 'Caveat', cursive;
+=======
+>>>>>>> e4209b4e2c3df8b1eb85bc344ef6a4b915d1ddb0
   font-size: 40px;
   line-height: 1.1;
   text-align: center;
@@ -29,6 +32,7 @@
   gap: 16px;
 }
 
+<<<<<<< HEAD
 .hero-btn {
   display: inline-block;
   padding: 12px 24px;
@@ -46,6 +50,11 @@
 .hero-image {
   width: 100%;
   max-width: 344px;
+=======
+.hero-image {
+  width: 100%;
+  max-width: 320px;
+>>>>>>> e4209b4e2c3df8b1eb85bc344ef6a4b915d1ddb0
   height: auto;
 }
 

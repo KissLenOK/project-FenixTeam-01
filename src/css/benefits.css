@@ -8,7 +8,7 @@
 .benefits-container {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
 }
 
 .benefits-content {
@@ -50,13 +50,13 @@
 .benefits-item {
   display: flex;
   align-items: flex-start;
-  gap: 32px;
+  gap: 24px;
 }
 
 .benefits-icon {
   display: block;
-  width: 40px;
-  height: 40px;
+  width: 48px;
+  height: 48px;
   flex-shrink: 0;
 }
 
@@ -82,12 +82,8 @@
 
 @media screen and (min-width: 768px) {
   .benefits {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
-
-  .benefits-container {
-    gap: 48px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 

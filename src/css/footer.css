@@ -1,6 +1,6 @@
 .footer {
-  padding: 64px 0 80px;
-  background-color: #ffcca8;
+  padding: 80px 0;
+  background-color: #ffcca6;
 }
 
 .footer-content {
@@ -11,7 +11,7 @@
 
 .footer-brand {
   display: block;
-  width: 161px;
+  width: 268px;
   margin-bottom: 32px;
 }
 
@@ -40,45 +40,24 @@
 
 .footer-copyright {
   width: 100%;
-  position: relative;
   margin-top: 32px;
-  padding-top: 28px;
+  padding-top: 32px;
+  border-top: 1px solid rgb(12 7 8 / 12%);
   text-align: center;
   font-size: 14px;
 }
 
-.footer-copyright::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100vw;
-  border-top: 1px solid rgb(12 7 8 / 12%);
-  content: '';
-  transform: translateX(-50%);
+@media only screen and (max-width: 767px) {
+  .footer-nav-list {
+    gap: 32px;
+    font-size: 18px;
+    font-weight: 500;
+  }
 }
 
 @media only screen and (min-width: 768px) {
-  .footer {
-    padding: 64px 0;
-  }
-
   .footer-nav-list {
     flex-direction: row;
     gap: 32px;
-  }
-
-  .footer-copyright {
-    margin-top: 40px;
-  }
-}
-
-@media only screen and (min-width: 1440px) {
-  .footer {
-    padding: 80px 0;
-  }
-
-  .footer-copyright {
-    margin-top: 48px;
-    padding-top: 32px;
   }
 }

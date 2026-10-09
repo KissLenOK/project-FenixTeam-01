@@ -1,55 +1,53 @@
-.hero {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 .hero-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
 }
 
 .hero-title {
   margin-bottom: 16px;
+  font-family: 'Caveat', cursive;
+  font-weight: 700;
   font-size: 40px;
-  line-height: 1.1;
-  text-align: center;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-align: left;
 }
 
 .hero-text {
   margin-bottom: 24px;
-  text-align: center;
+  text-align: left;
 }
 
 .hero-buttons {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 16px;
 }
 
 .hero-image {
   width: 100%;
-  max-width: 320px;
   height: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .hero {
-    padding-top: 48px;
-    padding-bottom: 48px;
-  }
 
   .hero-title {
     font-size: 56px;
   }
 
   .hero-image {
-    max-width: 420px;
+    max-width: 520px;
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1440px) {
+
+  .hero-title {
+  font-size: 56px;
+}
+
   .hero-container {
     flex-direction: row;
     justify-content: space-between;

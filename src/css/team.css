@@ -6,6 +6,7 @@
   letter-spacing: -0.01em;
   text-align: center;
   color: #0c0708;
+  margin-bottom: 24px;
 }
 .text-team {
   font-family: 'Tajawal', sans-serif;
@@ -14,6 +15,7 @@
   line-height: 1.5;
   text-align: center;
   color: #0c0708;
+  margin-bottom: 40px;
 }
 .team-name {
   font-family: 'Tajawal', sans-serif;
@@ -30,4 +32,36 @@
   line-height: 1.5;
   text-align: center;
   color: #0c0708;
+}
+.team-bloc {
+  margin-top: 24px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.team-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .team-list {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team-content {
+    flex-wrap: nowrap;
+  }
+  .team-list {
+    width: calc((100% - 96px) / 4);
+  }
 }

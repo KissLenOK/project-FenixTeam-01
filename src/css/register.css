@@ -1,0 +1,139 @@
+.register-title {
+  margin-bottom: 32px;
+  font-size: 48px;
+  line-height: 1.1;
+}
+
+.register-form-field {
+  margin-bottom: 24px;
+}
+
+.register-form-label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.register-form-input {
+  width: 100%;
+  height: 40px;
+  padding: 8px 12px;
+
+  outline: transparent;
+  border: 1px solid rgba(12, 7, 8, 0.15);
+  border-radius: 12px;
+
+  background-color: rgba(12, 7, 8, 0.05);
+
+  transition: 
+    border-color 250ms ease-out,
+    color 250ms ease-out;
+}
+
+.error {
+  opacity: 0;
+  max-height: 0;
+  transform: translateY(-4px);
+  overflow: hidden;
+  color: #b50000;
+
+  transition:
+    opacity 250ms ease-out,
+    max-height 250ms ease-out,
+    transform 250ms ease-out;
+}
+
+.register-form-input:focus {
+  border-color: #0c0708;
+}
+
+.register-form-input::placeholder, 
+.register-form-comment::placeholder {
+  color: rgba(12, 7, 8, 0.6);
+}
+
+.register-form-input:focus::placeholder {
+  color: #0c0708;
+}
+
+.register-form-input:user-invalid {
+  border-color: #b50000;
+  color: #b50000;
+}
+.register-form-input:user-invalid::placeholder {
+  color: #b50000;
+}
+
+.register-form-input:user-invalid + .error
+{
+  opacity: 1;
+  max-height: 30px;
+  transform: translateY(0);
+}
+
+.register-form-comment {
+  width: 100%;
+  height: 180px;
+  padding: 12px;
+
+  resize: none;
+  outline: transparent;
+  
+  border: 1px solid rgba(12, 7, 8, 0.15);
+  border-radius: 12px;
+  
+  background-color: rgba(12, 7, 8, 0.05);
+
+  transition: 
+    border-color 250ms ease-out,
+    color 250ms ease-out;
+}
+
+.register-form-comment:focus {
+  border-color: #0c0708;
+}
+
+.register-form-comment:focus::placeholder {
+  color: #0c0708;
+}
+
+.btn-reg {
+  width: 100%;
+  margin-bottom: 32px;
+}
+
+.img-contact {
+  width: 100%;
+  height: 286px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+@media only screen and (min-width: 768px) {
+  .img-contact {
+    height: 362px;
+  }
+
+  .btn-reg {
+    width: 340px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container.reg {
+    display: flex;
+    gap: 32px;
+  }
+
+  .register-wrapper {
+    width: 640px;
+  }
+
+  .btn-reg {
+    width: 304px;
+  }
+
+  .img-contact {
+    width: 640px;
+    height: 734px;
+  }
+}

@@ -12,7 +12,6 @@
 
 .hero-title {
   margin-bottom: 16px;
-  font-family: 'Caveat', cursive;
   font-size: 40px;
   line-height: 1.1;
   text-align: center;
@@ -29,23 +28,9 @@
   gap: 16px;
 }
 
-.hero-btn {
-  display: inline-block;
-  padding: 12px 24px;
-  border: 1px solid #e8893a;
-  border-radius: 24px;
-  background-color: #e8893a;
-  color: #ffffff;
-}
-
-.hero-btn-light {
-  background-color: transparent;
-  color: #e8893a;
-}
-
 .hero-image {
   width: 100%;
-  max-width: 344px;
+  max-width: 320px;
   height: auto;
 }
 

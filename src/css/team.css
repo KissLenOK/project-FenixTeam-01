@@ -1,0 +1,53 @@
+/* TEAM STYLE */
+.team-title {
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-align: center;
+  margin-bottom: 24px;
+}
+.text-team {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.team-name {
+  font-size: 20px;
+  text-align: center;
+}
+.team-job {
+  font-size: 18px;
+  text-align: center;
+}
+.team-bloc {
+  margin-top: 24px;
+}
+.team-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.team-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-content {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .team-list {
+    width: calc((100% - 24px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team-content {
+    flex-wrap: nowrap;
+  }
+  .team-list {
+    width: calc((100% - 160px) / 6);
+  }
+}

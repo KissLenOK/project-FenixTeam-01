@@ -1,0 +1,33 @@
+.team-title {
+  font-family: 'Caveat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0c0708;
+}
+.text-team {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0c0708;
+}
+.team-name {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0c0708;
+}
+.team-job {
+  font-family: 'Tajawal', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: #0c0708;
+}

@@ -1,0 +1,25 @@
+.header-nav-link {
+  position: relative;
+}
+
+.header-nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background-color: #ffb780;
+
+  transform: scaleX(0);
+
+  transition: 250ms ease-out;
+  transition-property: transform;
+}
+
+.header-nav-link:hover::after,
+.header-nav-link:focus-visible::after {
+  transform: scaleX(1);
+}

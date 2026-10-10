@@ -90,6 +90,9 @@
     max-width: 450px;
   }
 }
+.benefits-item > div {
+  max-width: 540px;
+}
 /* DESKTOP */
 
 @media screen and (min-width: 1440px) {

@@ -42,7 +42,7 @@ body:has(.mobile-menu.is-open) > footer {
   min-height: 100%;
 }
 
-.mobile-menu .mobile-container {
+.mobile-menu .mobile-menu-container {
   display: flex;
   flex-direction: column;
 }

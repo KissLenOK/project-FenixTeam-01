@@ -1,0 +1,279 @@
+/* =================================
+   MOBILE — базовые стили
+   до 767px
+================================= */
+
+.header {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.header *,
+.header *::before,
+.header *::after {
+  box-sizing: border-box;
+}
+
+.header .top-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+
+  width: 100%;
+  min-width: 0;
+  margin: 0 auto;
+  padding: 8px 16px;
+}
+
+.header .top-container > a:first-child {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.header .company-logo {
+  display: block;
+  width: 70px;
+  height: 48px;
+}
+
+.header .menu-nav {
+  display: none;
+}
+
+.header .nav-list {
+  display: none;
+}
+
+.header .button-small {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+
+  min-height: 40px;
+  padding: 8px 20px;
+  margin-left: auto;
+
+  border: 1px solid #ffb780;
+  border-radius: 100px;
+  background: #ffb780;
+  color: #0c0708;
+
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.header .icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 48px;
+
+  width: 48px;
+  height: 48px;
+  padding: 4px;
+
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.header .icon-button svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+/* =================================
+   TABLET — 768px–1023px
+================================= */
+
+@media screen and (min-width: 768px) {
+  .header .top-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    width: 100%;
+    height: 72px;
+    padding: 7px 24px;
+    box-sizing: border-box;
+  }
+
+  .header .top-container > a:first-child {
+    display: inline-flex;
+    align-items: center;
+    flex: 0 0 117px;
+  }
+
+  .header .company-logo {
+    display: block;
+    width: 117px;
+    height: 58px;
+    object-fit: contain;
+  }
+
+  .header .menu-nav {
+    display: flex;
+    align-items: center;
+    flex: 0 1 auto;
+    min-width: 0;
+    margin-left: auto;
+  }
+
+  .header .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    gap: 16px;
+    width: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .header .nav-list li {
+    flex: 0 0 auto;
+  }
+
+  .header .nav-link {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .header .button-small {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 97px;
+    width: 97px;
+    min-height: 40px;
+    padding: 8px 12px;
+    margin-left: 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+  }
+
+  .header .icon-button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header .top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    height: 72px;
+
+    padding: 0 64px;
+    margin: 0;
+    gap: 24px;
+
+    box-sizing: border-box;
+  }
+
+  /* LOGO LEFT */
+  .header .top-container > a:first-child {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    flex: 0 0 117px;
+    width: 117px;
+    height: 58px;
+
+    margin: 0;
+  }
+
+  .header .company-logo {
+    display: block;
+    width: 117px;
+    height: 58px;
+    object-fit: contain;
+  }
+
+  /* NAVIGATION RIGHT */
+  .header .menu-nav {
+    display: block;
+    flex: 0 1 auto;
+    width: auto;
+    min-width: 0;
+
+    margin-left: auto;
+  }
+
+  .header .nav-list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+
+    gap: 32px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .header .nav-list li {
+    flex: 0 0 auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header .nav-link {
+    display: inline-block;
+
+    font-size: 16px;
+    line-height: 1.5;
+    color: #0c0708;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  /* REGISTER RIGHT */
+  .header .button-small {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+    min-height: 40px;
+
+    margin: 0;
+    padding: 8px 20px;
+
+    border: 1px solid #ffb780;
+    border-radius: 100px;
+
+    background: #ffb780;
+    color: #0c0708;
+
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+
+  /* HIDE BURGER */
+  .header .icon-button {
+    display: none;
+  }
+}

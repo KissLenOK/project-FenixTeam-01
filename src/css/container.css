@@ -1,11 +1,12 @@
 .container {
-  max-width: 335px;
+  max-width: 375px;
   margin: 0 auto;
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 704px;
+    width: 100%;
   }
 }
 

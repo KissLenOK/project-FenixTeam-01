@@ -65,9 +65,8 @@
     font-size: 56px;
     max-width: 423px;
   }
-
-  .hero .hero-buttons {
-    height: 44px;
+  .hero-buttons {
+    gap: 16px;
   }
 
   .hero .hero-buttons .button-filled {

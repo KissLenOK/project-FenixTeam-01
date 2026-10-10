@@ -81,13 +81,11 @@
 /* TABLET */
 
 @media screen and (min-width: 768px) {
-  .benefits {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-
   .benefits-title {
     max-width: 450px;
+  }
+  .benefits-image {
+    width: 522px;
   }
 }
 .benefits-item > div {
@@ -122,19 +120,12 @@
   .benefits-content {
     width: 616px;
     flex-shrink: 0;
-    gap: 32px;
     order: 2;
   }
 
   .benefits-title {
     width: 450px;
     line-height: 48px;
-  }
-
-  .benefits-list {
-    gap: 32px;
-    padding-top: 8px;
-    padding-bottom: 8px;
   }
 
   .benefits-item-title {

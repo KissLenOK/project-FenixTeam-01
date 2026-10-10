@@ -1,0 +1,88 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  transform: translateX(100%);
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  padding-bottom: 32px;
+
+  transition: 250ms ease-out;
+  transition-property: transform;
+}
+
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+body:has(.mobile-menu.is-open) > header,
+body:has(.mobile-menu.is-open) > main,
+body:has(.mobile-menu.is-open) > footer {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  min-height: 100%;
+  gap: 8px;
+}
+
+.mobile-menu .top-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobile-menu-top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.mobile-menu-top > a {
+  display: block;
+}
+
+.mobile-menu .company-logo {
+  display: block;
+  width: 117px;
+  height: 58px;
+}
+
+.mobile-menu .button-filled {
+  margin-left: auto;
+}
+
+.mobile-menu-nav {
+  font-size: 18px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 8px 0;
+  text-align: center;
+}

@@ -35,7 +35,7 @@
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 56px;
-    max-width: 704px;
+    max-width: 600px;
   }
 
   .hero-buttons {
@@ -64,6 +64,20 @@
   .hero-title {
     font-size: 56px;
     max-width: 423px;
+  }
+
+  .hero .hero-buttons {
+    height: 44px;
+    padding: 10px 24px;
+  }
+
+  .hero .hero-buttons .button-filled {
+    width: 105px;
+  }
+
+  .hero .hero-buttons .button-transparent {
+    width: 127px;
+    white-space: nowrap;
   }
 
   .hero-container picture {

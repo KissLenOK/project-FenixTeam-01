@@ -1,7 +1,7 @@
 .hero-container {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 32px;
 }
 
 .hero-title {
@@ -68,7 +68,6 @@
 
   .hero .hero-buttons {
     height: 44px;
-    padding: 10px 24px;
   }
 
   .hero .hero-buttons .button-filled {

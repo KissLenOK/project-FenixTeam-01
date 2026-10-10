@@ -45,6 +45,7 @@
 @media screen and (min-width: 1440px) {
   .team-content {
     flex-wrap: nowrap;
+    gap: 32px;
   }
   .team-list {
     width: calc((100% - 160px) / 6);

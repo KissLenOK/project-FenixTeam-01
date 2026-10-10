@@ -48,12 +48,6 @@
 
   .header-nav-link {
     padding: 8px 0px;
-    transition: opacity 250ms ease-in-out;
-  }
-
-  .header-nav-link:hover,
-  .header-nav-link:focus-visible {
-    opacity: 0.5;
   }
 }
 

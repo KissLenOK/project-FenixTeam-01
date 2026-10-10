@@ -35,6 +35,7 @@
 @media screen and (min-width: 768px) {
   .hero-title {
     font-size: 56px;
+    max-width: 704px;
   }
 
   .hero-buttons {
@@ -52,13 +53,27 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 32px;
   }
 
   .hero-content {
-    max-width: 520px;
+    width: 423px;
+    flex-shrink: 0;
   }
 
   .hero-title {
     font-size: 56px;
+    max-width: 423px;
+  }
+
+  .hero-container picture {
+    width: 857px;
+    flex-shrink: 0;
+  }
+
+  .hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }
